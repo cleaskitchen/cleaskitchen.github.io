@@ -1,5 +1,6 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
+import NavBarIcons from './NavBarIcons'
 
 /**
  * A simple example of `AppBar` with an icon on the right.
@@ -8,8 +9,9 @@ import AppBar from 'material-ui/AppBar';
 const NavBar = () => (
     <AppBar
         title="Clea's Kitchen"
-        iconClassNameRight="muidocs-icon-navigation-expand-more"
+        showMenuIconButton = {false}
         style = {{textAlign:"center" , backgroundColor:"#673AB7", fontFamily: "'Lobster Two', cursive"}}
+        iconElementRight={<NavBarIcons />}
     />
 );
 
